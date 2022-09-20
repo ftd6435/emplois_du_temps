@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- lien des font personnaliser  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- lien de la feuille de style bootstrap -->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css" type="text/css" />
+    <!-- lien de la feuille de style personnaliser -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+    <title>Acceuil | BY : Pathé PK Diallo</title>
+</head>
+<body>
+    <header>
+        <div class="topbar"></div>
+        <div class="centerbar">
+            <div class="logo">
+                <img src="../assets/img/logo.jpg" alt="Logo">
+                <h2>Bienvenue à l'université de labé</h2>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <p>Nous contacter :</p>
+                        <a href="#">623903278</a>
+                    </li>
+                    <li>
+                        <p>E-mail :</p>
+                        <a href="#">universitedelabe@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- barre de navigation -->
+    <nav class="navbar">
+        <div class="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Acceuil</a></li>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Emploi du temps</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="btn">
+            <button class="btn-inscription"><a href="#">S'inscrire</a></button>
+            <button class="btn-connexion"><a href="#">Connexion</a></button>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <div class="logo" class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="../assets/img/logo.jpg" alt="Logo">
+            <h2>Bienvenue à l'université de labé</h2>
+            <p>E-mail: <span>universitedelabe@gmail.com</span></p>
+        </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="#" class="active">Acceuil</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="#">Emploi du temps</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="bar-ajout">
+            <button class="add-btn">Choisissez une option pour ajouter : </button>
+            <div class="btn-option">
+                <a href="#">Salle</a>
+                <a href="#">Professeur</a>
+                <a href="#">Etudiant</a>
+                <a href="#">Matière</a>
+                <a href="#">Département</a>
+                <a href="#">Faculté</a>
+                <a href="#">Personnel</a>
+                <a href="#">Niveau</a>
+                <a href="#">Emploi du temps</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- lien de la feuille d'interaction bootstrap  -->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- lien des font personnaliser  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- lien de la feuille de style bootstrap -->
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" type="text/css" />
+    <!-- lien de la feuille de style personnaliser -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <title>Nous Contacter | BY : Pathé PK Diallo</title>
+</head>
+<body>
+    <header>
+        <div class="topbar" id="haut"></div>
+        <div class="centerbar">
+            <div class="logo">
+                <img src="assets/img/logo.jpg" alt="Logo">
+                <h2>Bienvenue à l'université de labé</h2>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <p>Nous contacter :</p>
+                        <a href="#">623903278</a>
+                    </li>
+                    <li>
+                        <p>E-mail :</p>
+                        <a href="#">universitedelabe@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- barre de navigation -->
+    <nav class="navbar">
+        <div class="menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="apropos.html">A Propos</a></li>
+            <li>
+                <a href="#">
+                    Actualités
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentcolor" d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z"/>
+                    </svg>
+                </a>
+                <ul class="menu-deroulant">
+                    <li class="deroulant-content"><a href="actualiteProf.html">Actualités des professeurs</a></li>
+                    <li class="deroulant-content"><a href="actualiteDep.html">Actualités des departements</a></li>
+                    <li class="deroulant-content"><a href="professeurs.html">Liste des professeurs</a></li>
+                    <li class="deroulant-content"><a href="salles.html">Liste des salles</a></li>
+                </ul>
+            </li>
+            <li><a href="emplois.html">Emploi du temps</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="btn">
+            <button class="btn-inscription"><a href="#">S'inscrire</a></button>
+            <button class="btn-connexion"><a href="#">Connexion</a></button>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <div class="logo" class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="assets/img/logo.jpg" alt="Logo">
+            <h2>Bienvenue à l'université de labé</h2>
+            <p>E-mail: <span>universitedelabe@gmail.com</span></p>
+        </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="apropos.html">A Propos</a></li>
+                <li><a href="emplois.html">Emploi du temps</a></li>
+                <li><a href="actualiteProf.html">Actualités des professeurs</a></li>
+                <li><a href="actualiteDep.html">Actualités des departements</a></li>
+                <li><a href="professeurs.html">Liste des professeurs</a></li>
+                <li><a href="salles.html">Liste des salles</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+     <!-- zone du slide  -->
+    <section class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/slide.jpg" class="d-block w-100" alt="slide 1">
+                <div class="carousel-caption d-md-block">
+                    <h5>LE MONDE DU NUMERIQUE</h5>
+                    <p>Numérions nos emplois du temps</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slid2.jpg" class="d-block w-100" alt="slide 2">
+                <div class="carousel-caption d-md-block">
+                    <h5>LE MONDE DU NUMERIQUE</h5>
+                    <p>Numérions nos emplois du temps</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slide.jpg" class="d-block w-100" alt="slide 3">
+                <div class="carousel-caption d-md-block">
+                    <h5>LE MONDE DU NUMERIQUE</h5>
+                    <p>Numérions nos emplois du temps</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- zone du contact -->
+    <section class="contact">
+        <h2 class="title">REMPLISSEZ LES CHAMPS SVP</h2>
+        <div class="row">
+            <form action="">
+                <div class="mb-4">
+                    <label for="nom" class="form-label">Votre nom *</label>
+                    <input type="text" name="nom" id="nom" class="form-control" placeholder="Votre nom">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label">Votre e-mail *</label>
+                    <input type="mail" name="mail" id="mail" class="form-control" placeholder="Votre adresse e-mail">
+                </div>
+                <div class="mb-4">
+                    <label for="objet" class="form-label">Objet *</label>
+                    <input type="text" name="objet" id="objet" class="form-control" placeholder="Objectif du contact">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Votre nom *</label>
+                    <textarea type="text" name="message" id="message" class="form-control" rows="10" cols="10"></textarea>
+                </div>
+                <div class="mb-4">
+                    <button type="submit" class="btn-contact">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- boutton du retour en haut de la page -->
+    <a href="#haut" class="btn-return">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <path fill="currentColor" d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"/>
+        </svg>
+    </a>
+
+    <!-- le pied de la page -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="apropos.html">A Propos</a></li>
+                <li><a href="emplois.html">Emploi du temps</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="newletter">
+            <h3>Inscrivez-vous a notre newletter pour être notifié a chauque nouveau post</h3>
+            <form action="">
+                <input type="text" name="newletter" class="form-control" placeholder="Votre adresse e-mail">
+                <button type="submit" class="btn-newletter">VALIDER</button>
+            </form>
+        </div>
+
+        <div class="footer-actualiter">
+            <ul>
+                <li><a href="actualiteProf.html">Actualités des professeurs</a></li>
+                <li><a href="actualiteDep.html">Actualités des départements</a></li>
+                <li><a href="professeurs.html">Liste des professeurs</a></li>
+                <li><a href="salles.html">Liste des salles</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- lien de la feuille d'interaction bootstrap  -->
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
